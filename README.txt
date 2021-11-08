@@ -1,4 +1,4 @@
 WARNING: This will overwrite your keyboard keybinds for the planes included.
 
 << How to install keybinds >>
-Copy folders to "Program Files\Eagle Dynamics\DCS World OpenBeta\Mods\aircraft\"
+Copy folders within "keybinds" to "Saved Games\DCS.openbeta\Config\Input\"

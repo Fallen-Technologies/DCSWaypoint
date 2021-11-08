@@ -1,7 +1,5 @@
-import math, time, winsound, cv2, easyocr, pyautogui, keyboard
-import pyscreenshot as ImageGrab
-import numpy as np
-from matplotlib import pyplot as plt
+# DCS Waypoint Creator
+# © 2021 AIBS,LLC
 
 def split(word):
     return [char for char in word]
@@ -191,6 +189,11 @@ if selAC == "0":
     mouse(int(posCount))
 
 elif selAC == "1":
+    import math, time, winsound, cv2, easyocr, pyautogui, keyboard
+    import pyscreenshot as ImageGrab
+    import numpy as np
+    from matplotlib import pyplot as plt
+    print("\nready\n")
     while True:
         keyboard.wait('[')
         print('Waiting for coords')
@@ -202,6 +205,11 @@ elif selAC == "1":
         print(result)
 
 elif selAC == "2":
+    import math, time, winsound, cv2, easyocr, pyautogui, keyboard
+    import pyscreenshot as ImageGrab
+    import numpy as np
+    from matplotlib import pyplot as plt
+    print("\nready\n")
     while True:
         keyboard.wait('[')
         print('Waiting for coords')
@@ -223,6 +231,8 @@ elif selAC == "setup":
         os.system("pip install keyboard")
         os.system("pip install numpy")
         os.system("pip install matplotlib")
+        os.system("pip install pyscreenshot")
+
     elif ynAdmin == "n":
         print("Must run program as admin to run setup")
     else:
