@@ -9,13 +9,13 @@ def split(word):
 # find mouse location
 def mouse(x):
     for i in range(x):
-        time.sleep(3)
+        time.sleep(5)
         winsound.Beep(700, 300)
         pos = pyautogui.position()
         print(pos)
         winsound.Beep(900, 300)
 
-
+# press and release a key
 def pr(p):
     keyboard.press(str(p))
     time.sleep(float(0.1))
@@ -27,7 +27,7 @@ def pr(p):
 def findCoords():
     keyboard.wait('space')
     winsound.Beep(700, 300)
-    im = ImageGrab.grab(bbox=(100, 3, 330, 25))  # X1,Y1,X2,Y2 WHOLE
+    im = ImageGrab.grab(bbox=(100, 3, 330, 25))  # X1,Y1,X2,Y2 box
     im.save("coords.png")
     winsound.Beep(900, 300)
 
@@ -44,6 +44,7 @@ def runOCR():
     winsound.Beep(900, 150)
     winsound.Beep(900, 150)
 
+# hornet hsi data entry
 def keyEntryHornet():
     global word
     keyboard.wait('space')
@@ -52,15 +53,15 @@ def keyEntryHornet():
     keyboard.press('`') # UFC
     time.sleep(float(0.2))
     keyboard.release('`')
-    time.sleep(float(0.3))
+    time.sleep(float(0.1))
 
     keyboard.press('.') # POSN
     time.sleep(float(0.2))
     keyboard.release('.')
-    time.sleep(float(0.3))
+    time.sleep(float(0.1))
 
     keyboard.press('2') # North
-    time.sleep(float(0.5))
+    time.sleep(float(0.3))
     keyboard.release('2')
     print('pressed North')
     for x in word:
@@ -79,7 +80,7 @@ def keyEntryHornet():
 
             elif z == 7:
                 keyboard.press_and_release('enter')
-                keyboard.press('6')
+                keyboard.press('6') # East
                 time.sleep(float(0.5))
                 keyboard.release('6')
                 time.sleep(float(0.1))
@@ -96,14 +97,14 @@ def keyEntryHornet():
                 print('pressed enter')
                 time.sleep(float(0.2))
                 keyboard.press('=') # ELEV
-                time.sleep(float(0.5))
+                time.sleep(float(0.2))
                 keyboard.release('=')
                 print('changed to ELEV')
-                time.sleep(float(0.2))
+                time.sleep(float(0.1))
                 keyboard.press('.') # FEET
-                time.sleep(float(0.5))
+                time.sleep(float(0.2))
                 keyboard.release('.')
-                time.sleep(float(0.3))
+                time.sleep(float(0.1))
                 press = str(x)
                 keyboard.press_and_release(press)
                 print('pressed', x)
@@ -179,11 +180,17 @@ def keyEntryTomcat():
     winsound.Beep(900, 150)
 
 
+print("[0] Screen Coords Finder")
 print("[1] F/A-18C")
 print("[2] F-14B")
 selAC = input("Select Aircraft: ")
 print("Running...")
-if selAC == "1":
+if selAC == "0":
+    posCount = input("Find how many coords?: ")
+    keyboard.wait('space')
+    mouse(int(posCount))
+
+elif selAC == "1":
     while True:
         keyboard.wait('[')
         print('Waiting for coords')
@@ -192,6 +199,7 @@ if selAC == "1":
         findCoords()
         runOCR()
         keyEntryHornet()
+        print(result)
 
 elif selAC == "2":
     while True:
@@ -202,9 +210,26 @@ elif selAC == "2":
         findCoords()
         runOCR()
         keyEntryTomcat()
+        print(result)
+
+elif selAC == "setup":
+    import os
+    ynAdmin = input("Did you run this program as admin? (y/n): ")
+    if ynAdmin == "y":
+        os.system("pip install pip --upgrade")
+        os.system("pip install opencv-python")
+        os.system("pip install easyocr")
+        os.system("pip install pyautogui")
+        os.system("pip install keyboard")
+        os.system("pip install numpy")
+        os.system("pip install matplotlib")
+    elif ynAdmin == "n":
+        print("Must run program as admin to run setup")
+    else:
+        print("Invalid selection...")
+
 
 else:
     print("Error: Invalid Aircraft Input.")
 
-print(result)
 input("\nEnd of line")
