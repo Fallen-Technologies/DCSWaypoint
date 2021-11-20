@@ -1,10 +1,9 @@
 # DCS Waypoint Creator
 # © 2021 AIBS,LLC
-version = "2.5"
+version = "2.4"
 
 import sys, os, shutil, glob
 os.system("git pull")
-os.system("cls")
 file_name = 'vstore.txt'
 if float(version) < float(open(file_name).read()):
     print("New Update Availible!")
