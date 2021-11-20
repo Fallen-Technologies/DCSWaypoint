@@ -5,10 +5,13 @@ print("[1] Update Files")
 print("[2] First Time Setup")
 sel = input()
 if sel == "1":
-    os.remove("./keybinds")
-    print("Cloning keybinds...")
+    if os.path.exists("/keybinds"):
+        os.rmdir("/keybinds")
+    print("Updating...")
+    os.chdir("..")
     os.system("git clone https://github.com/TristanPFox/DCSWaypoint.git")
     os.system("git pull https://github.com/TristanPFox/DCSWaypoint.git")
+    print("Done")
 
 
 elif sel == "2":
