@@ -11,5 +11,5 @@ os.system("pip install matplotlib")
 os.system("pip install pyscreenshot")
 
 # End of line
-print("Finished Setup!")
-input("\n\nEnd of Line - Press Enter to Exit\n")
+print("\n\nFinished Setup!")
+input("\nEnd of Line - Press Enter to Exit\n")
