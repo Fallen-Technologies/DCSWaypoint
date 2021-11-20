@@ -21,7 +21,7 @@ def changeRes():
         c.close()
         res = "1080"
         resf = "1920x1080"
-        print("Resolution set!")
+        print("\nResolution set!")
         time.sleep(2)
         os.system("cls")
     elif selres == "2":
