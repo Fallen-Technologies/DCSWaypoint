@@ -1,5 +1,13 @@
 # DCS Waypoint Creator
 # © 2021 AIBS,LLC
+version = "2.3"
+
+import sys, os, shutil, glob
+os.system("git pull")
+os.system("cls")
+file_name = 'vstore.txt'
+if version != open(file_name).read():
+    print("\nNew Update Availible!\n")
 
 def split(word):
     return [char for char in word]
@@ -120,6 +128,7 @@ def keyEntryHornet():
     winsound.Beep(900, 150)
     winsound.Beep(900, 150)
 
+# tomcat tac data entry wypt 1
 def keyEntryTomcat():
     global word
     keyboard.wait('space')
@@ -219,25 +228,6 @@ elif selAC == "2":
         runOCR()
         keyEntryTomcat()
         print(result)
-
-elif selAC == "setup":
-    import os
-    ynAdmin = input("Did you run this program as admin? (y/n): ")
-    if ynAdmin == "y":
-        os.system("pip install pip --upgrade")
-        os.system("pip install opencv-python")
-        os.system("pip install easyocr")
-        os.system("pip install pyautogui")
-        os.system("pip install keyboard")
-        os.system("pip install numpy")
-        os.system("pip install matplotlib")
-        os.system("pip install pyscreenshot")
-
-    elif ynAdmin == "n":
-        print("Must run program as admin to run setup")
-    else:
-        print("Invalid selection...")
-
 
 else:
     print("Error: Invalid Aircraft Input.")
