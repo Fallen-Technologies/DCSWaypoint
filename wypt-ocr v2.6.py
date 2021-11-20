@@ -1,14 +1,9 @@
 # DCS Waypoint Creator
 # © 2021 AIBS,LLC
-version = "2.5"
+version = "2.6"
 
 import sys, os, shutil, glob
 os.system("git pull")
-file_name = 'vstore.txt'
-if float(version) < float(open(file_name).read()):
-    print("New Update Availible!")
-    print("Current Version:",str(version))
-    print("Latest Version:",open(file_name).read())
 
 def split(word):
     return [char for char in word]
@@ -191,6 +186,7 @@ def keyEntryTomcat():
 print("[0] Screen Coords Finder")
 print("[1] F/A-18C")
 print("[2] F-14B")
+print("[3] F-16C (in development)")
 selAC = input("Select Aircraft: ")
 print("Running...")
 if selAC == "0":
