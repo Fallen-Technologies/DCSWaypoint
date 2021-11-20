@@ -8,8 +8,7 @@ if sel == "1":
     if os.path.exists("/keybinds"):
         os.rmdir("/keybinds")
     print("Updating...")
-    os.chdir("..")
-    os.system("git pull https://github.com/TristanPFox/DCSWaypoint.git")
+    os.system("git pull")
     print("Done")
 
 
