@@ -5,10 +5,9 @@
 [WARNING: This will overwrite your keyboard keybinds for the planes included.]
 
 1. Copy folders within "keybinds" to "Saved Games\DCS.openbeta\Config\Input\"
-2. Download python 3.8.0 from => https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe
-3. Run "wypt-ocr.py"
-4. Type "setup" and hit "enter"
-5. After the program finishes it will say "End of line". Then hit "enter" to close.
+2. Run "wypt-ocr.py"
+3. Type "setup" and hit "enter"
+4. After the program finishes it will say "End of line". Then hit "enter" to close.
 
 
 -----<< Aircraft Setup >>-----

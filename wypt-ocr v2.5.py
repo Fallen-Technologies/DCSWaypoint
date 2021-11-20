@@ -1,6 +1,6 @@
 # DCS Waypoint Creator
 # © 2021 AIBS,LLC
-version = "2.4"
+version = "2.5"
 
 import sys, os, shutil, glob
 os.system("git pull")
