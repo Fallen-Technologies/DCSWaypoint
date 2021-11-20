@@ -2,15 +2,19 @@
 # © 2021 AIBS,LLC
 
 import sys, os, shutil, glob, time
+
+# pull updates
 print("Checking for updates...")
 os.system("git pull")
 time.sleep(2)
 os.system("cls")
 
+# create res.txt if non-existent
 file_name = 'res.txt'
 c = open(file_name, 'a+')  # open file in append mode
 c.close()
 
+# change res
 def changeRes():
     global res, resf
     print("[1] 1920x1080")
