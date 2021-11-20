@@ -6,8 +6,10 @@ import sys, os, shutil, glob
 os.system("git pull")
 os.system("cls")
 file_name = 'vstore.txt'
-if version != open(file_name).read():
-    print("\nNew Update Availible!\n")
+if float(version) < float(open(file_name).read()):
+    print("New Update Availible!")
+    print("Current Version:",str(version))
+    print("Latest Version:",open(file_name).read())
 
 def split(word):
     return [char for char in word]
