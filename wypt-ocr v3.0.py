@@ -4,7 +4,7 @@
 import sys, os, shutil, glob, time
 print("Checking for updates...")
 os.system("git pull")
-
+time.sleep(2)
 os.system("cls")
 
 file_name = 'res.txt'
