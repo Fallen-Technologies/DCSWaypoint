@@ -4,8 +4,9 @@
 import sys, os, shutil, glob, time
 
 # pull updates
-print("Checking for updates...")
+print("Checking for updates...\n")
 os.system("git pull")
+print("\nDone\n")
 time.sleep(2)
 os.system("cls")
 
