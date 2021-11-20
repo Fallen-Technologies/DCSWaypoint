@@ -9,7 +9,6 @@ if sel == "1":
         os.rmdir("/keybinds")
     print("Updating...")
     os.chdir("..")
-    os.system("git clone https://github.com/TristanPFox/DCSWaypoint.git")
     os.system("git pull https://github.com/TristanPFox/DCSWaypoint.git")
     print("Done")
 
