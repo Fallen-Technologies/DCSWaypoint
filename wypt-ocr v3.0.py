@@ -1,15 +1,61 @@
 # DCS Waypoint Creator
 # © 2021 AIBS,LLC
-version = "2.6"
 
 import sys, os, shutil, glob
 os.system("git pull")
+os.system("cls")
+
+file_name = 'res.txt'
+c = open(file_name, 'a+')  # open file in append mode
+c.close()
+
+def changeRes():
+    import time
+    global res, resf
+    print("[1] 1920x1080")
+    print("[2] 2560x1440")
+    selres = input("What resolution are you running?: ")
+    if selres == "1":
+        c = open("res.txt", 'w')
+        c.write('1920x1080')
+        c.close()
+        res = "1080"
+        resf = "1920x1080"
+        print("Resolution set!")
+        time.sleep(2)
+        os.system("cls")
+    elif selres == "2":
+        c = open("res.txt", 'w')
+        c.write('2560x1440')
+        c.close()
+        res = "1440"
+        resf = "2560x1440"
+        print("\nResolution set!")
+        time.sleep(2)
+        os.system("cls")
+    else:
+        input("Invalid input! Please restart the program.")
+        exit()
+
+# Check res settings
+if '1920x1080' in open(file_name).read():
+    res = "1080"
+    resf = "1920x1080"
+elif '2560x1440' in open(file_name).read():
+    res = "1440"
+    resf = "2560x1440"
+else:
+    print("<< == DCS Waypoint Creator == >>\n© 2021 AIBS,LLC\n")
+    print("Resolution setting not found\n")
+    changeRes()
+
 
 def split(word):
     return [char for char in word]
 
 # find mouse location
 def mouse(x):
+    time.sleep(5)
     for i in range(x):
         time.sleep(5)
         winsound.Beep(700, 300)
@@ -27,16 +73,20 @@ def pr(p):
 
 # grab screenshot of coords
 def findCoords():
+    global res
     keyboard.wait('space')
     winsound.Beep(700, 300)
-    im = ImageGrab.grab(bbox=(100, 3, 330, 25))  # X1,Y1,X2,Y2 box
-    im.save("coords.png")
+    if res == "1080":
+        im = ImageGrab.grab(bbox=(116, 7, 305, 25)) # X1,Y1,X2,Y2 box
+        im.save("coords.png")
+    elif res == "1440":
+        im = ImageGrab.grab(bbox=(100, 3, 330, 25)) # X1,Y1,X2,Y2 box
+        im.save("coords.png")
     winsound.Beep(900, 300)
 
 # ocr from image
 def runOCR():
-    global word
-    global result
+    global word, result
     img = 'coords.png'
     reader = easyocr.Reader(['en'], gpu=True)
     result = reader.readtext(img, detail=0)
@@ -119,8 +169,7 @@ def keyEntryHornet():
 
     time.sleep(0.5)
     keyboard.press_and_release('enter') # Enter after elevation
-    print('pressed final enter')
-    print(result)
+    print('\nfinished')
     winsound.Beep(900, 150)
     winsound.Beep(900, 150)
 
@@ -177,24 +226,28 @@ def keyEntryTomcat():
             print(x+' is not a number. Skipping')
 
     pr('enter') # Enter after elevation
-    print('pressed final enter')
-    print(result)
+    print('\nfinished')
     winsound.Beep(900, 150)
     winsound.Beep(900, 150)
-
-
-print("[0] Screen Coords Finder")
+print("<< == DCS Waypoint Creator == >>\n© 2021 AIBS,LLC\n")
+print("Current Resolution:",resf,"\n")
+print("-----<< Aircraft Selection >>-----")
+print("[0] Change Resolution")
 print("[1] F/A-18C")
 print("[2] F-14B")
-print("[3] F-16C (in development)")
-selAC = input("Select Aircraft: ")
-print("Running...")
-if selAC == "0":
+print("[3] F-16C (coming soon...)")
+selAC = input("\nSelect Aircraft: ")
+if selAC == "find":
+    import time, winsound, pyautogui, keyboard
     posCount = input("Find how many coords?: ")
-    keyboard.wait('space')
     mouse(int(posCount))
 
+elif selAC == "0":
+    changeRes()
+    print("Program Restart Required")
+
 elif selAC == "1":
+    print("Running...")
     import math, time, winsound, cv2, easyocr, pyautogui, keyboard
     import pyscreenshot as ImageGrab
     import numpy as np
@@ -204,13 +257,13 @@ elif selAC == "1":
         keyboard.wait('[')
         print('Waiting for coords')
         winsound.Beep(500, 200)
-        #mouse(6)
         findCoords()
         runOCR()
         keyEntryHornet()
         print(result)
 
 elif selAC == "2":
+    print("Running...")
     import math, time, winsound, cv2, easyocr, pyautogui, keyboard
     import pyscreenshot as ImageGrab
     import numpy as np
@@ -220,11 +273,14 @@ elif selAC == "2":
         keyboard.wait('[')
         print('Waiting for coords')
         winsound.Beep(500, 200)
-        #mouse(6)
         findCoords()
         runOCR()
         keyEntryTomcat()
         print(result)
+
+elif selAC == "3":
+    print("\nI said: Coming... Soon...")
+    print("Someone can't read smh")
 
 else:
     print("Error: Invalid Aircraft Input.")

@@ -1,6 +1,6 @@
-import sys, os, shutil, glob
+import os
 
-print("=== DCS Waypoint Creator Updater ===")
+print("\n=== DCS Waypoint Creator Updater ===\n\n")
 os.system("pip install pip --upgrade")
 os.system("pip install opencv-python")
 os.system("pip install easyocr")
