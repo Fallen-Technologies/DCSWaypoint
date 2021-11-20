@@ -1,8 +1,10 @@
 # DCS Waypoint Creator
 # © 2021 AIBS,LLC
 
-import sys, os, shutil, glob
+import sys, os, shutil, glob, time
+print("Checking for updates...")
 os.system("git pull")
+
 os.system("cls")
 
 file_name = 'res.txt'
@@ -10,7 +12,6 @@ c = open(file_name, 'a+')  # open file in append mode
 c.close()
 
 def changeRes():
-    import time
     global res, resf
     print("[1] 1920x1080")
     print("[2] 2560x1440")
@@ -238,7 +239,7 @@ print("[2] F-14B")
 print("[3] F-16C (coming soon...)")
 selAC = input("\nSelect Aircraft: ")
 if selAC == "find":
-    import time, winsound, pyautogui, keyboard
+    import winsound, pyautogui, keyboard
     posCount = input("Find how many coords?: ")
     mouse(int(posCount))
 
@@ -248,7 +249,7 @@ elif selAC == "0":
 
 elif selAC == "1":
     print("Running...")
-    import math, time, winsound, cv2, easyocr, pyautogui, keyboard
+    import math, winsound, cv2, easyocr, pyautogui, keyboard
     import pyscreenshot as ImageGrab
     import numpy as np
     from matplotlib import pyplot as plt
@@ -264,7 +265,7 @@ elif selAC == "1":
 
 elif selAC == "2":
     print("Running...")
-    import math, time, winsound, cv2, easyocr, pyautogui, keyboard
+    import math, winsound, cv2, easyocr, pyautogui, keyboard
     import pyscreenshot as ImageGrab
     import numpy as np
     from matplotlib import pyplot as plt
