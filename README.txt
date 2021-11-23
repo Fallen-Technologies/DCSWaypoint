@@ -1,5 +1,6 @@
 << == DCS Waypoint Creator == >>
 © 2021 AIBS,LLC
+https://discord.gg/fallen-angels
 
 -----<< Setup >>-----
 [WARNING: This will overwrite your keyboard keybinds for the planes included.]

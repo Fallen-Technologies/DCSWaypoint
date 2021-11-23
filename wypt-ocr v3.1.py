@@ -1,5 +1,6 @@
 # DCS Waypoint Creator
 # © 2021 AIBS,LLC
+# https://discord.gg/fallen-angels
 
 import sys, os, shutil, glob, time
 
@@ -51,7 +52,7 @@ elif '2560x1440' in open(file_name).read():
     res = "1440"
     resf = "2560x1440"
 else:
-    print("<< == DCS Waypoint Creator == >>\n© 2021 AIBS,LLC\n")
+    print("<< == DCS Waypoint Creator == >>\n© 2021 AIBS,LLC\nhttps://discord.gg/fallen-angels\n")
     print("Resolution setting not found\n")
     changeRes()
 
@@ -235,7 +236,7 @@ def keyEntryTomcat():
     print('\nfinished')
     winsound.Beep(900, 150)
     winsound.Beep(900, 150)
-print("<< == DCS Waypoint Creator == >>\n© 2021 AIBS,LLC\n")
+print("<< == DCS Waypoint Creator == >>\n© 2021 AIBS,LLC\nhttps://discord.gg/fallen-angels\n")
 print("Current Resolution:",resf,"\n")
 print("-----<< Aircraft Selection >>-----")
 print("[0] Change Resolution")
