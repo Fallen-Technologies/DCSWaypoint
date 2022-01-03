@@ -20,12 +20,16 @@ else:
     key2 = key
 hostname = socket.gethostname()
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-clientSocket.connect(("127.0.0.1",9090))
-clientSocket.send(hostname.encode())
+print("Connecting to Fallen Licensing Servers...")
+clientSocket.connect(("dcswyptlic.fallenservers.com", 4050))
+clientSocket.sendall(hostname.encode())
 print(clientSocket.recv(9))
-clientSocket.send(key.encode())
+print("Sending License...")
+clientSocket.sendall(key.encode())
 dataFromServer = clientSocket.recv(16)
+print("Server Acknowledged License.")
 key = dataFromServer.decode()
+print("Starting program...")
 bufferSize = 64 * 1024
 my_file = Path("wypt_ocr.py.aes")
 if my_file.is_file():
