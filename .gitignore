@@ -1,3 +1,11 @@
 old/
 coords.png
 res.txt
+holding
+encrypt.py
+keycheck_socket.pyw
+keygen.pyw
+__pycache__
+LICENSE.FALLEN
+keys.txt
+log.txt

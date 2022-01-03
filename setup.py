@@ -2,6 +2,7 @@ import os
 
 print("\n=== DCS Waypoint Creator Updater ===\n\n")
 os.system("pip install pip --upgrade")
+os.system("pip install pyAesCrypt")
 os.system("pip install opencv-python")
 os.system("pip install easyocr")
 os.system("pip install pyautogui")
