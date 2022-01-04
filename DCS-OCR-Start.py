@@ -24,8 +24,8 @@ else:
 hostname = socket.gethostname()
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 print("Connecting to Fallen Licensing Servers...")
-#clientSocket.connect(("dcswyptlic.fallenservers.com", 4050))
-clientSocket.connect(("127.0.0.1", 9090)) #Test
+clientSocket.connect(("dcswyptlic.fallenservers.com", 4050))
+#clientSocket.connect(("127.0.0.1", 9090)) #Test
 clientSocket.sendall(hostname.encode())
 print(clientSocket.recv(9).decode())
 print("Sending License Info...")
