@@ -44,3 +44,4 @@ try:
         import wypt_ocr
 except ValueError:
     print(f"\n\nERROR: INVALID LICENSE\nERROR CODE: {ec}\nContact us at discord.gg/fallen-angels if you are having issues...")
+    input()
