@@ -3,8 +3,11 @@
 # https://discord.gg/fallen-angels
 
 import socket, os, pyAesCrypt, time
+from getmac import get_mac_address as gma
 from pathlib import Path
+mID = str(gma())
 lic = Path('LICENSE.FALLEN')
+
 if lic.is_file():
     key = open(lic).read()
     print('Valid License Found!')
@@ -21,17 +24,23 @@ else:
 hostname = socket.gethostname()
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 print("Connecting to Fallen Licensing Servers...")
-clientSocket.connect(("dcswyptlic.fallenservers.com", 4050))
+#clientSocket.connect(("dcswyptlic.fallenservers.com", 4050))
+clientSocket.connect(("127.0.0.1", 9090)) #Test
 clientSocket.sendall(hostname.encode())
-print(clientSocket.recv(9))
-print("Sending License...")
+print(clientSocket.recv(9).decode())
+print("Sending License Info...")
 clientSocket.sendall(key.encode())
+clientSocket.sendall(mID.encode())
 dataFromServer = clientSocket.recv(1024)
+ec = clientSocket.recv(7).decode()
 print("Server Acknowledged License.")
 key = dataFromServer.decode()
 print("Starting program...")
 bufferSize = 64 * 1024
 my_file = Path("wypt_ocr.py.aes")
-if my_file.is_file():
-    pyAesCrypt.decryptFile("wypt_ocr.py.aes", "wypt_ocr.py", key, bufferSize)
-    import wypt_ocr
+try:
+    if my_file.is_file():
+        pyAesCrypt.decryptFile("wypt_ocr.py.aes", "wypt_ocr.py", key, bufferSize)
+        import wypt_ocr
+except ValueError:
+    print(f"\n\nERROR: INVALID LICENSE\nERROR CODE: {ec}\nContact us at discord.gg/fallen-angels if you are having issues...")
