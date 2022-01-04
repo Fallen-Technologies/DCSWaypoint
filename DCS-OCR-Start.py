@@ -1,5 +1,5 @@
 # DCS Waypoint Creator
-# © 2021 AIBS,LLC
+# © 2022 AIBS,LLC
 # https://discord.gg/fallen-angels
 
 import socket, os, pyAesCrypt, time
