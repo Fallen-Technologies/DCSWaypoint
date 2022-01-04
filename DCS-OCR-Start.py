@@ -10,8 +10,10 @@ lic = Path('LICENSE.FALLEN')
 
 if lic.is_file():
     key = open(lic).read()
-    print('Valid License Found!')
-    time.sleep(0.5)
+    if len(key) != 24:
+        print('ERROR: Invalid License File\nTry Deleting LICENSE.FALLEN and re-entering your key')
+        exit()
+    print('Valid License File Found!')
 else:
     print("<< == DCS Waypoint Creator == >>\n© 2021 AIBS,LLC\nhttps://discord.gg/fallen-angels\n")
     print("Paste License Key Below!")
