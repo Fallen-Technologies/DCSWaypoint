@@ -9,3 +9,5 @@ __pycache__
 LICENSE.FALLEN
 keys.txt
 log.txt
+gui/
+DCSWyptGUI.py
