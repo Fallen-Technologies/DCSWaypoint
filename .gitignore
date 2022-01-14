@@ -4,6 +4,8 @@ res.txt
 holding
 encrypt.py
 keycheck_socket.pyw
+keygen_multi.py
+keygenGUI.py
 keygen.pyw
 __pycache__
 LICENSE.FALLEN
@@ -11,3 +13,4 @@ keys.txt
 log.txt
 gui/
 DCSWyptGUI.py
+keys.db3
