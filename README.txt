@@ -15,6 +15,8 @@ https://discord.gg/fallen-angels
 
 => F-14B RIO: The waypoint creator will automatically select the "Tac Data" page and overwrite waypoint 1
 
+=> F-16C: Click Button "4" to open STPT editor. Then navigate to which steer point you want to input.
+
 
 -----<< How to use >>-----
 1. Run the program and select which aircraft you are currently flying. Example: "1", "2", etc.
