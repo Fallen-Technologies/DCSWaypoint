@@ -12,6 +12,7 @@ if lic.is_file():
     key = open(lic).read()
     if len(key) != 24:
         print('ERROR: Invalid License File\nTry Deleting LICENSE.FALLEN and re-entering your key')
+        input()
         exit()
     print('Valid License File Found!')
 else:
@@ -21,6 +22,7 @@ else:
     key = input()
     if len(key) != 24:
         print('Invalid Entry')
+        input()
         exit()
     key2 = key
 hostname = socket.gethostname()
