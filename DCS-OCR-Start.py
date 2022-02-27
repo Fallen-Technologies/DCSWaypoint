@@ -54,7 +54,6 @@ else:
     input("")
     exit()
 os.system("cls")
-
 try:
     if my_file.is_file():
         pyAesCrypt.decryptFile("wypt_ocr.py.aes", "wypt_ocr.py", key, bufferSize)

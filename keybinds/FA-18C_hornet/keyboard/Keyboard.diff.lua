@@ -555,8 +555,16 @@ local diff = {
 			},
 			["name"] = "UFC Keyboard Pushbutton - 4",
 		},
+		["d3022pnilu3022cd36vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "]",
+				},
+			},
+			["name"] = "Right MDI PB 12",
+		},
 		["d3023pnilu3023cd13vd1vpnilvu0"] = {
-			["name"] = "Throttle Designator Controller - Depress",
+			["name"] = "Throttle Designator Controller - DEPRESS",
 			["removed"] = {
 				[1] = {
 					["key"] = "Enter",
@@ -812,7 +820,7 @@ local diff = {
 			},
 		},
 		["d363pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "Clickable mouse cockpit mode On/Off",
+			["name"] = "Force cursor to show on/off",
 			["removed"] = {
 				[1] = {
 					["key"] = "C",

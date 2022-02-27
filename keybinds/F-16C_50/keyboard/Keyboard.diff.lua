@@ -224,6 +224,14 @@ local diff = {
 				},
 			},
 		},
+		["d3030pnilu3030cd17vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "=",
+				},
+			},
+			["name"] = "ICP DED Increment/Decrement Switch - Increment",
+		},
 		["d3034pnilu3034cd17vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -277,6 +285,14 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "3",
+				},
+			},
+		},
+		["dnilp3033unilcd16vdnilvp1vunil"] = {
+			["name"] = "ANT ELEV Knob - CW",
+			["removed"] = {
+				[1] = {
+					["key"] = "=",
 				},
 			},
 		},

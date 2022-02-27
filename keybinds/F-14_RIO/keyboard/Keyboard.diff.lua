@@ -19,10 +19,26 @@ local diff = {
 		["d3518pnilu3518cd24vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "`",
+					["key"] = "W",
 				},
 			},
 			["name"] = "CAP button 1",
+		},
+		["d3519pnilu3519cd24vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "E",
+				},
+			},
+			["name"] = "CAP button 2",
+		},
+		["d3520pnilu3520cd24vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "R",
+				},
+			},
+			["name"] = "CAP button 3",
 		},
 		["d3530pnilunilcd24vd0.6vpnilvunil"] = {
 			["added"] = {
