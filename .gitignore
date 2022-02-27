@@ -2,6 +2,7 @@ old/
 coords.png
 res.txt
 holding
+backup
 encrypt.py
 keycheck_socket.pyw
 keygen_multi.py
@@ -14,3 +15,4 @@ log.txt
 gui/
 DCSWyptGUI.py
 keys.db3
+custom_bulk_entries.txt

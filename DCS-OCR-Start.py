@@ -42,10 +42,30 @@ key = dataFromServer.decode()
 print("Starting program...")
 bufferSize = 64 * 1024
 my_file = Path("wypt_ocr.py.aes")
+# update
+versionCurrent = open('version.txt').read()
+import update
+versionFound = open('version.txt').read()
+if versionCurrent == versionFound:
+    # already on latest version
+    time.sleep(1)
+else:
+    print("A NEW UPDATE has been Installed!\n Exit and Relaunch to Apply Update...")
+    input("")
+    exit()
+os.system("cls")
+
 try:
     if my_file.is_file():
         pyAesCrypt.decryptFile("wypt_ocr.py.aes", "wypt_ocr.py", key, bufferSize)
-        import wypt_ocr
+        try:
+            import wypt_ocr
+        except Exception:
+            import os
+            os.remove('wypt_ocr.py')
+            print("\nSomething went wrong.")
+            input("")
+            exit()
 except ValueError:
     print(f"\n\nERROR: INVALID LICENSE\nERROR CODE: {ec}\nContact us at discord.gg/fallen-angels if you are having issues...")
     input()
