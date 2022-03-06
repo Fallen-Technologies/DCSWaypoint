@@ -15,7 +15,7 @@ if lic.is_file():
         exit()
     print('Valid License File Found!')
 else:
-    print("<< == DCS Waypoint Creator == >>\n© 2021 AIBS,LLC\nhttps://discord.gg/fallen-angels\n")
+    print("<< == DCS Waypoint Creator == >>\n© 2022 AIBS,LLC\nhttps://discord.gg/fallen-angels\n")
     print("Paste License Key Below!")
     print("Key Format: xxxx-xxxx-xxxx-xxxx-xxxx\n")
     key = input()
