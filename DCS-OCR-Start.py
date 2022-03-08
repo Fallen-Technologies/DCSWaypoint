@@ -5,7 +5,7 @@ import socket, os, pyAesCrypt, time
 from getmac import get_mac_address as gma
 from pathlib import Path
 mID = str(gma())
-lic = Path('data/LICENSE.FALLEN')
+lic = Path('LICENSE.FALLEN')
 
 if lic.is_file():
     key = open(lic).read()
@@ -43,7 +43,7 @@ bufferSize = 64 * 1024
 my_file = Path("wypt_ocr.py.aes")
 # update
 versionCurrent = open('version.txt').read()
-from data import update
+import update
 versionFound = open('version.txt').read()
 if versionCurrent == versionFound:
     # already on latest version
@@ -55,9 +55,9 @@ else:
 os.system("cls")
 try:
     if my_file.is_file():
-        pyAesCrypt.decryptFile("data/wypt_ocr.py.aes", "data/wypt_ocr.py", key, bufferSize)
+        pyAesCrypt.decryptFile("wypt_ocr.py.aes", "wypt_ocr.py", key, bufferSize)
         try:
-            from data import wypt_ocr
+            import wypt_ocr
         except Exception:
             import os
             os.remove('wypt_ocr.py')
