@@ -7,3 +7,4 @@ keyboard
 numpy
 matplotlib
 pyscreenshot
+requests

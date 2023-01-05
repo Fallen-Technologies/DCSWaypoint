@@ -1,9 +1,17 @@
 # DCS Waypoint Creator
-# © 2022 AIBS,LLC
+# © 2023 AIBS,LLC
 # https://discord.gg/fallen-angels
-import os, pyAesCrypt, time, requests
-from getmac import get_mac_address as gma
-from pathlib import Path
+import os
+try:
+    import pyAesCrypt, time, requests
+    from getmac import get_mac_address as gma
+    from pathlib import Path
+except ImportError:
+    os.system("pip install -r requirements.txt")
+    print("\n\nA NEW UPDATE has been Installed!\n Exit and Relaunch to Apply Update...")
+    input("")
+    exit()
+
 mID = str(gma())
 lic = Path('LICENSE.FALLEN')
 LIC_SERVER_URL = "https://lic.zipmunks.com"
