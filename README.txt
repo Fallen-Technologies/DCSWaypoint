@@ -1,11 +1,11 @@
 << == DCS Waypoint Creator == >>
-© 2022 AIBS,LLC
+© 2023 AIBS,LLC
 https://discord.gg/fallen-angels
 
 -----<< Setup >>-----
 [WARNING: This will overwrite your keyboard keybinds for the planes included.]
 
-1. Obtain product LICENSE KEY from a moderator on our discord.
+1. Obtain product LICENSE KEY from here: https://buy.stripe.com/28oaFBeCPd2n7Be7ss
 2. Copy folders within "keybinds" to "Saved Games\DCS.openbeta\Config\Input\"
 
 
