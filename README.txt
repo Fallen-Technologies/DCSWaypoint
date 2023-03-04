@@ -20,7 +20,7 @@ https://discord.gg/fallen-angels
 
 -----<< How to use >>-----
 1. Run the program and select which options you want to use. Then press "[" to enable those settings.
-2. Return to DCS and press "[" to enable the program with the selected options. You will hear a start beep, The program is now running.
+2. Return to DCS and press "space" to enable the program with the selected options. You will hear a start beep, The program is now running.
 3. Go to the F10 map and hover your cursor where you want the waypoint (ensure the coords are not obscured in the top-left)
 4. Hit "spacebar". You'll hear a beep, signaling the program has started and saved the screenshot.
 5. Return to the cockpit, when you hear 2 beeps in quick succession. This signals the program is ready to enter the waypoint.
