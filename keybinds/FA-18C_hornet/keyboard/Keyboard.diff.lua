@@ -52,6 +52,22 @@ local diff = {
 				},
 			},
 		},
+		["d177pnilunilcdnilvdnilvpnilvunil"] = {
+			["name"] = "Zoom normal",
+			["removed"] = {
+				[1] = {
+					["key"] = "NumEnter",
+				},
+			},
+		},
+		["d17pnilu18cdnilvdnilvpnilvunil"] = {
+			["name"] = "Cockpit panel view in",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num0",
+				},
+			},
+		},
 		["d193pnilu194cdnilvdnilvpnilvunil"] = {
 			["name"] = "Aircraft Pitch Down",
 			["removed"] = {
@@ -81,6 +97,14 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "Right",
+				},
+			},
+		},
+		["d19pnilunilcdnilvdnilvpnilvunil"] = {
+			["name"] = "Lock View (cycle padlock)",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num.",
 				},
 			},
 		},
@@ -219,37 +243,11 @@ local diff = {
 			},
 			["name"] = "ALQ-165 ECM Mode Switch - XMIT",
 		},
-		["d3001pnilunilcd67vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "Right",
-				},
-			},
-			["name"] = "Kneeboard Next Page",
-			["removed"] = {
-				[1] = {
-					["key"] = "]",
-				},
-			},
-		},
 		["d3002pnilu3002cd23vd1vpnilvu0"] = {
 			["name"] = "Master Mode Button - A/G",
 			["removed"] = {
 				[1] = {
 					["key"] = "2",
-				},
-			},
-		},
-		["d3002pnilunilcd67vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "Left",
-				},
-			},
-			["name"] = "Kneeboard Previous Page",
-			["removed"] = {
-				[1] = {
-					["key"] = "[",
 				},
 			},
 		},
@@ -276,22 +274,6 @@ local diff = {
 			},
 			["name"] = "UFC Function Selector Pushbutton - D/L",
 		},
-		["d3005pnilunilcd67vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "Down",
-				},
-			},
-			["name"] = "Kneeboard Next Shortcut",
-		},
-		["d3006pnilunilcd7vd0vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "P",
-				},
-			},
-			["name"] = "Ejection Seat SAFE/ARMED Handle - ARMED",
-		},
 		["d3007pnilu3007cd25vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -311,6 +293,14 @@ local diff = {
 				},
 			},
 			["name"] = "LST/NFLR Switch - ON/OFF",
+		},
+		["d3008pnilu3008cd9vd1vpnilvu0"] = {
+			["name"] = "MASTER CAUTION Reset Button",
+			["removed"] = {
+				[1] = {
+					["key"] = "N",
+				},
+			},
 		},
 		["d3010pnilu3010cd25vd1vpnilvu0"] = {
 			["added"] = {
@@ -358,6 +348,9 @@ local diff = {
 					["reformers"] = {
 						[1] = "LCtrl",
 					},
+				},
+				[2] = {
+					["key"] = "N",
 				},
 			},
 			["name"] = "UFC Option Select Pushbutton 4",
@@ -460,6 +453,9 @@ local diff = {
 				[2] = {
 					["key"] = "0",
 				},
+				[3] = {
+					["key"] = "Num0",
+				},
 			},
 			["name"] = "UFC Keyboard Pushbutton - 0",
 		},
@@ -499,6 +495,9 @@ local diff = {
 				[2] = {
 					["key"] = "1",
 				},
+				[3] = {
+					["key"] = "Num1",
+				},
 			},
 			["name"] = "UFC Keyboard Pushbutton - 1",
 		},
@@ -522,8 +521,19 @@ local diff = {
 				[2] = {
 					["key"] = "2",
 				},
+				[3] = {
+					["key"] = "Num2",
+				},
 			},
 			["name"] = "UFC Keyboard Pushbutton - 2",
+		},
+		["d3021pnilu3021cd13vd1vpnilvu0"] = {
+			["name"] = "Throttle Designator Controller - LEFT",
+			["removed"] = {
+				[1] = {
+					["key"] = ",",
+				},
+			},
 		},
 		["d3021pnilu3021cd25vd1vpnilvu0"] = {
 			["added"] = {
@@ -536,6 +546,9 @@ local diff = {
 				},
 				[2] = {
 					["key"] = "3",
+				},
+				[3] = {
+					["key"] = "Num3",
 				},
 			},
 			["name"] = "UFC Keyboard Pushbutton - 3",
@@ -552,13 +565,16 @@ local diff = {
 				[2] = {
 					["key"] = "4",
 				},
+				[3] = {
+					["key"] = "Num4",
+				},
 			},
 			["name"] = "UFC Keyboard Pushbutton - 4",
 		},
 		["d3022pnilu3022cd36vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "]",
+					["key"] = "P",
 				},
 			},
 			["name"] = "Right MDI PB 12",
@@ -582,6 +598,9 @@ local diff = {
 				},
 				[2] = {
 					["key"] = "5",
+				},
+				[3] = {
+					["key"] = "Num5",
 				},
 			},
 			["name"] = "UFC Keyboard Pushbutton - 5",
@@ -630,6 +649,9 @@ local diff = {
 				[2] = {
 					["key"] = "6",
 				},
+				[3] = {
+					["key"] = "Num6",
+				},
 			},
 			["name"] = "UFC Keyboard Pushbutton - 6",
 		},
@@ -641,6 +663,9 @@ local diff = {
 						[1] = "LAlt",
 						[2] = "LCtrl",
 					},
+				},
+				[2] = {
+					["key"] = ",",
 				},
 			},
 			["name"] = "Left MDI PB 14",
@@ -665,6 +690,9 @@ local diff = {
 				[2] = {
 					["key"] = "7",
 				},
+				[3] = {
+					["key"] = "Num7",
+				},
 			},
 			["name"] = "UFC Keyboard Pushbutton - 7",
 		},
@@ -680,6 +708,9 @@ local diff = {
 				[2] = {
 					["key"] = "8",
 				},
+				[3] = {
+					["key"] = "Num8",
+				},
 			},
 			["name"] = "UFC Keyboard Pushbutton - 8",
 		},
@@ -694,6 +725,9 @@ local diff = {
 				},
 				[2] = {
 					["key"] = "9",
+				},
+				[3] = {
+					["key"] = "Num9",
 				},
 			},
 			["name"] = "UFC Keyboard Pushbutton - 9",
@@ -718,6 +752,9 @@ local diff = {
 						[1] = "LAlt",
 						[2] = "LCtrl",
 					},
+				},
+				[2] = {
+					["key"] = "Num-",
 				},
 			},
 			["name"] = "UFC Keyboard Pushbutton - CLR",
@@ -757,6 +794,9 @@ local diff = {
 				},
 				[2] = {
 					["key"] = "Enter",
+				},
+				[3] = {
+					["key"] = "NumEnter",
 				},
 			},
 			["name"] = "UFC Keyboard Pushbutton - ENT",
@@ -820,7 +860,7 @@ local diff = {
 			},
 		},
 		["d363pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "Force cursor to show on/off",
+			["name"] = "Clickable Mouse Cockpit Mode - ON/OFF",
 			["removed"] = {
 				[1] = {
 					["key"] = "C",
@@ -835,6 +875,38 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "G",
+				},
+			},
+		},
+		["dnilp210u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Up Right slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num9",
+				},
+			},
+		},
+		["dnilp211u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Down Right slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num3",
+				},
+			},
+		},
+		["dnilp212u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Down Left slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num1",
+				},
+			},
+		},
+		["dnilp213u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Up Left slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num7",
 				},
 			},
 		},
@@ -867,11 +939,6 @@ local diff = {
 			},
 		},
 		["dnilp3015u3015cd13vdnilvp1vu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "Num-",
-				},
-			},
 			["name"] = "Trimmer Switch - PUSH(DESCEND)",
 			["removed"] = {
 				[1] = {
@@ -883,6 +950,11 @@ local diff = {
 			},
 		},
 		["dnilp3016u3016cd13vdnilvp1vu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Left",
+				},
+			},
 			["name"] = "Trimmer Switch - LEFT WING DOWN",
 			["removed"] = {
 				[1] = {
@@ -894,6 +966,11 @@ local diff = {
 			},
 		},
 		["dnilp3017u3017cd13vdnilvp1vu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Right",
+				},
+			},
 			["name"] = "Trimmer Switch - RIGHT WING DOWN",
 			["removed"] = {
 				[1] = {
@@ -944,6 +1021,46 @@ local diff = {
 					["reformers"] = {
 						[1] = "RShift",
 					},
+				},
+			},
+		},
+		["dnilp32u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Left slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num4",
+				},
+			},
+		},
+		["dnilp33u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Right slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num6",
+				},
+			},
+		},
+		["dnilp34u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Up slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num8",
+				},
+			},
+		},
+		["dnilp35u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Down slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num2",
+				},
+			},
+		},
+		["dnilp36unilcdnilvdnilvpnilvunil"] = {
+			["name"] = "View Center",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num5",
 				},
 			},
 		},

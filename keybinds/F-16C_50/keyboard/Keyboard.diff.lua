@@ -8,6 +8,22 @@ local diff = {
 				},
 			},
 		},
+		["d197pnilu198cdnilvdnilvpnilvunil"] = {
+			["name"] = "Aircraft Bank Left",
+			["removed"] = {
+				[1] = {
+					["key"] = "Left",
+				},
+			},
+		},
+		["d199pnilu200cdnilvdnilvpnilvunil"] = {
+			["name"] = "Aircraft Bank Right",
+			["removed"] = {
+				[1] = {
+					["key"] = "Right",
+				},
+			},
+		},
 		["d3002pnilu3002cd17vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -287,6 +303,22 @@ local diff = {
 					["key"] = "3",
 				},
 			},
+		},
+		["dnilp3023unilcd2vdnilvp-0.3vunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Right",
+				},
+			},
+			["name"] = "ROLL TRIM Wheel - R WING DN",
+		},
+		["dnilp3023unilcd2vdnilvp0.3vunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Left",
+				},
+			},
+			["name"] = "ROLL TRIM Wheel - L WING DN",
 		},
 		["dnilp3033unilcd16vdnilvp1vunil"] = {
 			["name"] = "ANT ELEV Knob - CW",
