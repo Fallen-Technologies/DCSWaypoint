@@ -17,9 +17,9 @@ https://discord.fallenservers.com
 
 => F-16C: Click Button "4" to open STPT editor. Then navigate to which steer point you want to input.
 
-=> F-15E Pilot/WSO: On the UFC click on Steerpoint on the top right (Ex: STR 1A) to open the waypoint edit
+=> F-15E Pilot/WSO: On the UFC click on Steerpoint on the top right (Ex: STR A1) to open the waypoint edit
 	 menu.
-	 For Bulk entry: The program will automatically start on waypoint 11 instead of 1 to help with
+	 For Bulk entry: The program will automatically start on waypoint A11 instead of 1 to help with
 	 deconfliction of other waypoints, no need to switch to 11 manually before entry.
 
 
