@@ -1,10 +1,26 @@
 local diff = {
 	["keyDiffs"] = {
+		["d177pnilunilcdnilvdnilvpnilvunil"] = {
+			["name"] = "Zoom normal",
+			["removed"] = {
+				[1] = {
+					["key"] = "NumEnter",
+				},
+			},
+		},
 		["d17pnilu18cdnilvdnilvpnilvunil"] = {
 			["name"] = "Cockpit panel view in",
 			["removed"] = {
 				[1] = {
 					["key"] = "Num0",
+				},
+			},
+		},
+		["d19pnilunilcdnilvdnilvpnilvunil"] = {
+			["name"] = "Lock View (cycle padlock)",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num.",
 				},
 			},
 		},
@@ -65,10 +81,10 @@ local diff = {
 		["d3022pnilu3022cd56vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "3",
+					["key"] = "Num3",
 				},
 				[2] = {
-					["key"] = "Num3",
+					["key"] = "3",
 				},
 			},
 			["name"] = "UFC 3/B Key",
@@ -76,10 +92,10 @@ local diff = {
 		["d3025pnilu3025cd56vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "4",
+					["key"] = "Num4",
 				},
 				[2] = {
-					["key"] = "Num4",
+					["key"] = "4",
 				},
 			},
 			["name"] = "UFC 4/W Key",
@@ -87,10 +103,10 @@ local diff = {
 		["d3026pnilu3026cd56vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "5",
+					["key"] = "Num5",
 				},
 				[2] = {
-					["key"] = "Num5",
+					["key"] = "5",
 				},
 			},
 			["name"] = "UFC 5/M Key",
@@ -98,10 +114,10 @@ local diff = {
 		["d3027pnilu3027cd56vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "6",
+					["key"] = "Num6",
 				},
 				[2] = {
-					["key"] = "Num6",
+					["key"] = "6",
 				},
 			},
 			["name"] = "UFC 6/E Key",
@@ -109,10 +125,10 @@ local diff = {
 		["d3030pnilu3030cd56vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "7",
+					["key"] = "Num7",
 				},
 				[2] = {
-					["key"] = "Num7",
+					["key"] = "7",
 				},
 			},
 			["name"] = "UFC 7/: Key",
@@ -120,10 +136,10 @@ local diff = {
 		["d3031pnilu3031cd56vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "8",
+					["key"] = "Num8",
 				},
 				[2] = {
-					["key"] = "Num8",
+					["key"] = "8",
 				},
 			},
 			["name"] = "UFC 8/S Key",
@@ -131,10 +147,10 @@ local diff = {
 		["d3032pnilu3032cd56vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "9",
+					["key"] = "Num9",
 				},
 				[2] = {
-					["key"] = "Num9",
+					["key"] = "9",
 				},
 			},
 			["name"] = "UFC 9/C Key",
@@ -142,10 +158,10 @@ local diff = {
 		["d3033pnilu3033cd56vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "Num+",
+					["key"] = "`",
 				},
 				[2] = {
-					["key"] = "`",
+					["key"] = "Num+",
 				},
 			},
 			["name"] = "UFC Shift (SHF) Key",
@@ -153,7 +169,7 @@ local diff = {
 		["d3035pnilu3035cd56vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "Num-",
+					["key"] = "Num.",
 				},
 			},
 			["name"] = "UFC Clear (CLR) Key",
@@ -182,14 +198,6 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "Num+",
-				},
-			},
-		},
-		["dnilp1033u1034cdnilvdnilvpnilvunil"] = {
-			["name"] = "Throttle Smoothly (Both) - Decrease",
-			["removed"] = {
-				[1] = {
-					["key"] = "Num-",
 				},
 			},
 		},
