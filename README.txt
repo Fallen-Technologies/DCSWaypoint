@@ -32,3 +32,9 @@ https://discord.fallenservers.com
 6. When ready (after following the Aircraft Setup guide above), hit "spacebar", you'll hear a long deeper toned beep. Wait for the waypoint to be entered.
 7. When the waypoint is finished being created you'll hear 2 beeps in quick succession.
 8. You can start the program again by following the directions from Step 2.
+
+
+-----<< DCS MMO usage >>-----
+1. Run the program and select your Aircraft, Dynamic Entry then Mark Points
+2. Return to DCS and press "]" to run in DCS Mode. You will hear a start beep, The program is now running.
+DEBUGGING: If you hear 2 Low-Tone Beeps. Check console. If it's your first time running the DCS MMO Mode, it will create a text file called "dcs_username.txt", edit this file and type your DCS In-Game name then save and exit. The program will automatically find the MMO server, and the Mark Point with your DCS Username.
