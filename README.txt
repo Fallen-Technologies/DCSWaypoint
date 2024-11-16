@@ -1,12 +1,14 @@
 << == DCS Waypoint Creator == >>
-© 2023 AIBS,LLC
-https://discord.fallenservers.com
+© 2024 Fallen Technologies
+Website: https://fallentechnologies.com
+Discord: https://discord.fallenservers.com
 
 -----<< Setup >>-----
 [WARNING: This will overwrite your keyboard keybinds for the planes included.]
 
-1. Obtain product LICENSE KEY from here: https://www.thefallenserver.com/digital-products
-2. Copy folders within "keybinds" to "Saved Games\DCS.openbeta\Config\Input\"
+1. Obtain product LICENSE KEY by creating a support ticket in our Discord. Link above!
+2. Copy folders (except the one labeled "CORE INSTALL") within "keybinds" to "Saved Games\DCS.openbeta\Config\Input\"
+3. Copy the contents of CORE INSTALL to your DCS Install location. Allow it to overwrite. (This adds keybinds for the Right CDU in the Chinook that aren't normally in the game)
 
 
 -----<< Aircraft Setup >>-----
@@ -21,6 +23,8 @@ https://discord.fallenservers.com
 	 menu.
 	 For Bulk entry: The program will automatically start on waypoint A11 instead of 1 to help with
 	 deconfliction of other waypoints, no need to switch to 11 manually before entry.
+
+=> CH-47F: The program will type the Lat Lon coords into the right-CDU. You can enter this waypoint anywhere in your flight plan.
 
 
 -----<< How to use >>-----
